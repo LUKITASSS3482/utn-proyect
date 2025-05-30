@@ -1,0 +1,127 @@
+/* Fondo general para el body */
+body {
+  background-color: palevioletred; /* Fondo rosa para la página */
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+  color: #333;
+  text-align: center;
+  min-height: 100vh;  /* Para asegurarnos de que cubra toda la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Header igual a style.css */
+header {
+  background-color: white;
+  width: 100%;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+  color: black;
+  margin: 0;
+}
+
+/* Navbar igual a style.css */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color: palevioletred;
+  padding: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+  font-size: 1rem;
+}
+
+.navbar a:hover {
+  color: #b37baa;
+}
+
+/* Sección de contacto */
+#contacto {
+  padding: 50px;
+  background-color: white;
+  text-align: center;
+}
+
+/* Formulario */
+.form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.form-container label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.form-container textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.form-container button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: pink;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: black;
+}
+
+/* Footer con fondo negro */
+.contact-footer {
+  background-color: black;  /* Fondo negro para el footer */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+/* Responsividad */
+@media screen and (max-width: 768px) {
+  .form-container {
+    width: 90%;
+  }
+}
